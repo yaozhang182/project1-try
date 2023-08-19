@@ -6,7 +6,7 @@ WORKDIR /shopping-lists
 
 COPY ./shopping-lists/deps.js .
 
-RUN deno cache ./shopping-lists/deps.js
+RUN deno cache deps.js
 
 COPY . .
 
