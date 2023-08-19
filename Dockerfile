@@ -4,9 +4,9 @@ EXPOSE 7777
 
 WORKDIR /shopping-lists
 
-COPY deps.js .
+COPY ./shopping-lists/deps.js .
 
-RUN deno cache deps.js
+RUN deno cache ./shopping-lists/deps.js
 
 COPY . .
 
